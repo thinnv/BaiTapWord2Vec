@@ -138,7 +138,7 @@ modelW2V_Gensim.init_sims(replace=True)
 # # Saving the model for later use. Can be loaded using Word2Vec.load()
 model_name = "300features_40minwords_10context"
 modelW2V_Gensim.save(model_name)
-print('Tìm top-10 từ tương đồng với từ: [màu]')
+print('Tìm top-10 từ tương đồng với từ: [độc lập]')
 for index, word_tuple in enumerate(modelW2V_Gensim.wv.most_similar("độc lập")):
     print('%s.%s\t\t%s\t%s' % (index, word_tuple[0], word_tuple[1],word_tuple))
 
